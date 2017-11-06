@@ -3,7 +3,7 @@ Shoot Aliens is a 2D game built with the help of Pygame.
 In this game a ship is created that moves and kills fleets of aliens coming.
 
 
-# Descriptiom:
+# Description:
 In Alien Invasion, the player controls a ship that appears at
 the bottom center of the screen. The player can move the ship
 right and left using the arrow keys and shoot bullets using the
