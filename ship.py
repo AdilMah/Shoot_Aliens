@@ -9,6 +9,13 @@ class Ship():
 
 		self.rect.centerx=self.screen_rect.centerx
 		self.rect.bottom=self.screen_rect.bottom
+		#Movement Flag
+		self.moving_right=False
+
+	def update(self):
+		"To change the ships position based on the movement flag"
+		if ship.moving_right:
+			self.rect.centerx+=1
 
 	def blitme(self):
 		self.screen.blit(self.image,self.rect)
