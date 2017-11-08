@@ -12,11 +12,8 @@ def run_game():
 	bg_color=(230,230,230)#Background color
 
 	while True:
-		for event in pygame.event.get():
-			if event.type==pygame.QUIT:#To access the events detected by python
-				 sys.exit
-		screen.fill(initial_settings.bg_color)
-		ship.blitme()
-		pygame.display.flip()#To make the most recently drwan screen visible
+		gf.check_events(ship);
+		gf.update_screen(initial_settings,screen,ship)
+
 run_game()
 
